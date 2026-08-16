@@ -13,6 +13,12 @@ def resumen(df):
     print(df.describe())
     print("Columnas disponibles:", list(df.columns))
 
+
+def promedio_columna(df, columna):
+    """Calcula el promedio de una columna."""
+    return df[columna].mean()
+
+
 if __name__ == "__main__":
     datos = cargar_datos("diabetes.csv")
     resumen(datos)
