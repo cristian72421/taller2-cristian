@@ -18,6 +18,9 @@ def promedio_columna(df, columna):
     """Calcula el promedio de una columna."""
     return df[columna].mean()
 
+def contar_nulos(df):
+    """Cuenta los valores nulos por columna."""
+    return df.isnull().sum()
 
 if __name__ == "__main__":
     datos = cargar_datos("diabetes.csv")
