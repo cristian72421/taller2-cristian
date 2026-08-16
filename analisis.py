@@ -11,7 +11,8 @@ def resumen(df):
     print("Filas:", df.shape[0])
     print("Columnas:", df.shape[1])
     print(df.describe())
+    print("Columnas disponibles:", list(df.columns))
 
 if __name__ == "__main__":
-    datos = cargar_datos("BikePrices.csv")
+    datos = cargar_datos("diabetes.csv")
     resumen(datos)
