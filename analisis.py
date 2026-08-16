@@ -39,3 +39,4 @@ if __name__ == "__main__":
         print(f"Edad Minima: {min_val}, Edad Maxima: {max_val}")
     except KeyError:
         print("La columna 'Age' no se encuentra en el dataset.")
+# Cambio final para la verificacion del Pull Request del taller
